@@ -1,0 +1,17 @@
+.List {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .List {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .List {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,3 +1,5 @@
+import styles from './ImageCard.module.css';
+
 type Props = {
   imageUrl: string;
   imageTitle: string;
@@ -6,7 +8,7 @@ type Props = {
 function ImageCard({ imageUrl, imageTitle }: Props) {
   return (
     <li>
-      <img src={imageUrl} alt={imageTitle} />
+      <img src={imageUrl} alt={imageTitle} className={styles.Image} />
       <p>{imageTitle}</p>
     </li>
   );
