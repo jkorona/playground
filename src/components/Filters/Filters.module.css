@@ -1,0 +1,18 @@
+.Filters {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+}
+
+.Input {
+  min-width: 300px;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  padding: .5rem;
+}
+
+@media (min-width: 768px) {
+  .Filters {
+    justify-content: flex-start;
+  }
+}

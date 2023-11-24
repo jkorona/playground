@@ -7,9 +7,9 @@ type Props = {
 
 function ImageCard({ imageUrl, imageTitle }: Props) {
   return (
-    <li>
+    <li className={styles.ImageCard}>
       <img src={imageUrl} alt={imageTitle} className={styles.Image} />
-      <p>{imageTitle}</p>
+      <p className={styles.Title}>{imageTitle}</p>
     </li>
   );
 }
