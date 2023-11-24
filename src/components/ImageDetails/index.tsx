@@ -8,7 +8,6 @@ type Props = {
 function ImageDetails({ image }: Props) {
   return (
     <div>
-      <img src={image.url} alt={image.title} className={styles.Image} />
       <ul className={styles.Properties}>
         <li>
           <strong>Album ID:</strong> {image.albumId}

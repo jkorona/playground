@@ -13,7 +13,7 @@ function ImagesList({ images, onShowDetails }: Props) {
       {images.map((image) => (
         <ImageCard
           key={`image_${image.id}`}
-          imageUrl={image.url}
+          imageUrl={image.thumbnailUrl}
           imageTitle={image.title}
           onClick={() => onShowDetails(image)}
         />
