@@ -1,4 +1,5 @@
 import { Image } from "@/model/Image";
+import styles from "./ImageDetails.module.css";
 
 type Props = {
   image: Image;
@@ -7,8 +8,8 @@ type Props = {
 function ImageDetails({ image }: Props) {
   return (
     <div>
-      <h3>Image Details</h3>
-      <ul>
+      <img src={image.url} alt={image.title} className={styles.Image} />
+      <ul className={styles.Properties}>
         <li>
           <strong>Album ID:</strong> {image.albumId}
         </li>

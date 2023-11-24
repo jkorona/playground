@@ -23,6 +23,11 @@ body {
   padding: 0 1rem;
 }
 
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --background: #ffffff;

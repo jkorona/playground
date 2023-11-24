@@ -20,7 +20,11 @@ function Images() {
         images={data}
         onShowDetails={setSelectedImage}
       />
-      <Modal show={!!selectedImage} onClose={() => setSelectedImage(null)}>
+      <Modal
+        show={!!selectedImage}
+        title="Image Details"
+        onClose={() => setSelectedImage(null)}
+      >
         <ImageDetails image={selectedImage!} />
       </Modal>
     </>

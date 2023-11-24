@@ -26,24 +26,39 @@
 @media (max-width: 767px) {
   .Modal {
     width: 100%;
+    min-width: 320px;
     height: 100%;
     border-radius: 0;
+    padding-top: 2rem;
   }
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.Title {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  line-height: 1.5rem;
+  margin: 0;  
 }
 
 .CloseButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
   width: 2rem;
   height: 2rem;
   border-radius: 100%;
   cursor: pointer;
   padding: 0;
   border: none;
+  justify-self: flex-end;
 }
 
 .CloseButton:hover {

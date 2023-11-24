@@ -5,11 +5,12 @@ import CloseIcon from "./CloseIcon";
 
 type Props = {
   show: boolean;
+  title?: string;
   children: ReactNode;
   onClose: () => void;
 }
 
-function Modal({ show, children, onClose }: Props) {
+function Modal({ show, title, children, onClose }: Props) {
   const modalRef = useRef<HTMLDivElement>(null);
 
   useClickAway(modalRef, onClose);
@@ -38,12 +39,15 @@ function Modal({ show, children, onClose }: Props) {
   return (
     <div className={styles.Overlay}>
       <div className={styles.Modal} ref={modalRef}>
-        <button
-          className={styles.CloseButton}
-          onClick={onClose}
-        >
-          <CloseIcon />
-        </button>
+        <div className={styles.Header}>
+          {title && <h3 className={styles.Title}>{title}</h3>}
+          <button
+            className={styles.CloseButton}
+            onClick={onClose}
+          >
+            <CloseIcon />
+          </button>
+        </div>
         {children}
       </div>
     </div>
