@@ -19,4 +19,4 @@ There are a few tests written for the components. Run `npm test` to run the test
 See two cards design versions:
 
 1. `main` branch 
-2. `cards-design-2` branch
+2. `cards-design-1` branch
